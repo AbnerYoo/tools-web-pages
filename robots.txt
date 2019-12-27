@@ -1,0 +1,6 @@
+User-agent: *
+
+Disallow: /css/
+Disallow: /fonts/
+
+Sitemap: http://tools.g-lab.xyz/sitemap.xml
