@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="やり直すんだ。そして、次はうまくやる。"/>
+    <meta name="keywords" content="人生重开模拟器 liferestart life restart remake 人生重来"/>
+    <link id="themeLink" rel="stylesheet" href="light.css">
+    <link rel="manifest" href="./manifest.json">
+    <title>Life Restart</title>
+</head>
+<body>
+  <div id="main">
+    <div class="ad-zone">
+      <!-- 游戏页广告 -->
+        <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-5507837965607182"
+        data-ad-slot="9586546213"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      </div>
+      <button id="continue" class="mainbtn">继续游戏</button>
+  </div>
+  <script src="../lib/jquery-3.6.0.min.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5507837965607182"
+     crossorigin="anonymous"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    $(document).ready(function() {
+     const theme = localStorage.getItem('theme');
+     const themeLink = $(document).find('#themeLink');
+
+      if(theme == 'light') {
+          themeLink.attr('href', 'light.css');
+      } else {
+          themeLink.attr('href', 'dark.css');
+      }
+    })
+
+    
+    $('#continue').click(function() {
+      location.href="../view/index.html"
+    })
+  </script>
+</body>
+
+</html>
+
+<style scoped>
+  .ad-zone {
+    margin: 20px auto;
+    height: 100%;
+    width: 100%;
+    line-height: 100%;
+    max-height: 60%;
+    max-width: 90%;
+    vertical-align: middle;
+  }
+  
+  #continue {
+    margin: 20px auto;
+  }
+  </style>
