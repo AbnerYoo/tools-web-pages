@@ -48,14 +48,6 @@
   padding: 0;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-input[type="number"]{
-    -moz-appearance: textfield;
-}
-
 html {
   font-family: PingFangSC, 'Noto Sans CJK SC', 'MS Yahei';
 }
@@ -161,14 +153,14 @@ body {
   word-wrap: none;
 }
 
-#toHome {
-  background-color: lightskyblue;
-  top: 7rem;
-}
-
 #specialthanks {
   background-color: #5865F2;
   top: 1rem;
+}
+
+#toHome {
+  background-color: lightskyblue;
+  top: 7rem;
 }
 
 .sponsor {
@@ -276,8 +268,6 @@ ul#total li .achievementtitle,
   overflow: scroll;
 }
 
-#save,
-#load,
 #themeToggleBtn {
   padding: 0 0.7rem;
   width: 6.5rem;
@@ -296,17 +286,6 @@ ul#total li .achievementtitle,
   bottom: 0.5rem;
 }
 
-#save {
-  background-color:#007046;
-  color: white;
-  bottom: 6.5rem;
-}
-#load {
-  background-color: #fc5531;
-  color: white;
-  bottom: 3.5rem;
-}
-
 .head {
   display: flex;
   flex-direction: column;
@@ -322,6 +301,7 @@ ul#total li .achievementtitle,
   list-style: none;
   flex: 1;
   padding: 1rem;
+  overflow: auto;
 }
 
 .lifeProperty {
